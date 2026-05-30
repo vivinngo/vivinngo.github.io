@@ -1,0 +1,91 @@
+{{ define "header" }}
+<header style="background: #fff; padding: 60px 0 20px; border-bottom: 1px solid #eee;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="tags" style="margin-bottom: 12px;">
+                    {{ range .Params.tags }}
+                    <a class="tag" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}">{{ . }}</a>
+                    {{ end }}
+                </div>
+                <h1 style="color: #000; font-size: 2.6em; font-weight: 700; line-height: 1.2; margin: 0 0 16px;">{{ .Title }}</h1>
+                <span class="meta" style="color: #777; font-size: 0.9em;">
+                    Posted by
+                    {{ if .Params.author }}{{ .Params.author }}{{ else }}{{ .Site.Title }}{{ end }}
+                    &nbsp;·&nbsp; {{ .Date.Format "January 2, 2006" }}
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article>
+    <div class="container">
+        <div class="row">
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                {{ .Content }}
+
+                {{ if or (.PrevInSection) (.NextInSection) }}
+                <hr>
+                <ul class="pager">
+                    {{ if .PrevInSection }}
+                    <li class="previous">
+                        <a href="{{ .PrevInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .PrevInSection.Title}}">&larr; Previous Post</a>
+                    </li>
+                    {{ end }}
+                    {{ if .NextInSection }}
+                    <li class="next">
+                        <a href="{{ .NextInSection.RelPermalink }}" data-toggle="tooltip" data-placement="top" title="{{ .NextInSection.Title}}">Next Post &rarr;</a>
+                    </li>
+                    {{ end }}
+                </ul>
+                {{ end }}
+
+                {{ partial "comments.html" . }}
+            </div>
+
+            {{ if not (eq (.Param "showtoc") false) }}
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a class="catalog-toggle" href="#">CATALOG</a></h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            {{ end }}
+
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+                {{ if .Site.Params.featured_tags }}
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        {{ $featured_condition_size := .Site.Params.featured_condition_size }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                        {{ if gt (len $taxonomy.Pages) $featured_condition_size }}
+                        <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" title="{{ $name }}">{{ $name }}</a>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                </section>
+                {{ end }}
+            </div>
+
+        </div>
+    </div>
+</article>
+{{ end }}
