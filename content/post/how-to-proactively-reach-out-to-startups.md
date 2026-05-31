@@ -2,9 +2,10 @@
 title: "How to proactively reach out to startups and land a job offer"
 date: 2026-05-30
 description: "Everyone knows startup interview processes are more straightforward than big companies — but do you know how to actually find them and approach them? Here's my step-by-step method."
-tags: ["career"]
+tags: ["career", "job_search", "startups"]
 categories: ["career"]
 ---
+![Alt text](/img/post1_how_to_proactively_reach_out/background.png)
 
 Everyone knows there are plenty of "under-the-table" jobs, and that startup interview processes are often more straightforward than those in big companies. But wait… do you actually know how to find startups and the best way to approach them to successfully get an offer? This very first step stops many people from landing opportunities, so let me share my step-by-step approach.
 

@@ -1,7 +1,7 @@
 baseurl = "https://vivinngo.github.io/"
 title = "Vi Ngo"
 theme = "hugo-theme-cleanwhite"
-languageCode = "en-us"
+locale = "en-us"
 preserveTaxonomyNames = true
 
 [services]
@@ -21,7 +21,7 @@ home = ["HTML", "RSS"]
   SEOTitle = "Vi Ngo | Portfolio"
   description = "AI Engineer — building intelligent systems and sharing what I learn."
   keyword = "Vi Ngo, vivinngo, AI Engineer, Machine Learning, Portfolio, Blog"
-  slogan = "1% Better Everyday"
+  slogan = "Learn and share AI/ML knowledge"
   upstreamAttribution = true
 
   image_404 = "img/404-bg.jpg"
@@ -41,7 +41,7 @@ home = ["HTML", "RSS"]
   sidebar_avatar = "img/avt.png"
 
   featured_tags = true
-  featured_condition_size = 1
+  featured_condition_size = 0
 
   ba_track_id = ""
   disqus_proxy = ""

@@ -1,11 +1,7 @@
-.intro-header .site-heading h1,
-.intro-header .site-heading .subheading {
-    color: #000 !important;
-}
-
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
     color: #000 !important;
+    font-size: 15px !important;
 }
 
 /* Post page: clean white header, no background */
@@ -13,4 +9,26 @@
 .post-container h2,
 .post-container h3 {
     color: #000;
+}
+
+.post-container p,
+.post-container li {
+    font-size: 19px;
+}
+
+.side-catalog h5,
+.side-catalog h5 a {
+    font-size: 18px;
+}
+
+.side-catalog .catalog-body .h1_nav,
+.side-catalog .catalog-body .h2_nav,
+.side-catalog .catalog-body .h3_nav {
+    font-size: 18px;
+}
+
+.side-catalog .catalog-body .h4_nav,
+.side-catalog .catalog-body .h5_nav,
+.side-catalog .catalog-body .h6_nav {
+    font-size: 16px;
 }
