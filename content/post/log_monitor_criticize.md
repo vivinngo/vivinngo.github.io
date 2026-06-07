@@ -1,7 +1,7 @@
 ---
 title: "Log, Explain, Criticize: A Practical Loop for Trustworthy Models in Production"
-date: 2026-06-06T10:00:00+01:00
-description: "A one-sentence hook that summarizes what the reader will learn or take away."
+date: 2026-06-08T10:00:00+01:00
+description: "You train models and achieve good results with high accuracy, precision, RMSE, etc, but it quietly makes bad decisions in production, which raises questions in the team, including you."
 tags: ["AI_model", "production"]
 categories: ["AI topic"]
 ---
