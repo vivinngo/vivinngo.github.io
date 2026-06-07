@@ -21,6 +21,23 @@
 {{ end }}
 
 {{ define "main" }}
+<style>
+    .catalog-container .side-catalog { width: 150px; padding-bottom: 24px; }
+    .catalog-container .side-catalog h5 { font-size: 13px; margin: 8px 0; }
+    .catalog-container .side-catalog .catalog-body li a {
+        max-width: 140px;
+        height: 22px;
+        line-height: 22px;
+        padding-left: 8px;
+    }
+    .catalog-container .side-catalog .catalog-body .h1_nav,
+    .catalog-container .side-catalog .catalog-body .h2_nav,
+    .catalog-container .side-catalog .catalog-body .h3_nav { font-size: 11px; }
+    .catalog-container .side-catalog .catalog-body .h4_nav,
+    .catalog-container .side-catalog .catalog-body .h5_nav .h6_nav { font-size: 10px; }
+    .catalog-container .side-catalog .catalog-body .h4_nav a,
+    .catalog-container .side-catalog .catalog-body .h5_nav .h6_nav a { max-width: 130px; }
+</style>
 <article>
     <div class="container">
         <div class="row">
