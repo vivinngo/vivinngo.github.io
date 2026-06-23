@@ -38,9 +38,6 @@
 	    {{ range .Site.Params.additional_menus }}
                         <li><a href="{{.href | relLangURL}}/">{{.title}}</a></li>
                     {{ end }}
-		            <li>
-                        <a href="{{ "search" | relURL }}"><i class="fa fa-search"></i></a>
-		           </li>
                     {{ if not (eq .Site.Params.dark_mode_toggle false) }}
 		            <li>
                         <a href="#" id="theme-toggle" title="Toggle dark mode" style="opacity: 0;">

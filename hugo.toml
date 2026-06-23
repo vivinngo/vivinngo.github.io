@@ -68,8 +68,11 @@ home = ["HTML", "RSS"]
   github   = "https://github.com/vivinngo"
 
   [[params.additional_menus]]
-  title = "ARCHIVE"
-  href  = "/archive/"
+  title = "NOTES"
+  href  = "/notes/"
+  [[params.additional_menus]]
+  title = "LEARNING MATERIALS"
+  href  = "/learning-materials/"
   [[params.additional_menus]]
   title = "ABOUT"
   href  = "/about/"
