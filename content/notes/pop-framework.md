@@ -6,9 +6,9 @@ tags: ["career", "startups", "personal_growth", "productivity"]
 categories: [career]
 draft: false
 ---
-I find that using this framework when reporting your progress during standup meetings is very concise and helpful. Before this, I usually struggled and thought a lot about what I should say, how long or how short should I report. My manager taught me this framework and definitely it helps my report more concise, and helps team members to grab the context quickly.
+I find that using this framework when reporting my progress during standup meetings is very concise and helpful. Before this, I usually struggled and thought a lot about what I should say, how long or how short should I report. My manager taught me this framework and definitely it helps my report more concise, and helps team members to grab the context quickly.
 
-POP - standing for purpose - outcome - progress.
+POP - standing for purpose - outcome - progress
 
 Purpose: Why do you do that task?
 
