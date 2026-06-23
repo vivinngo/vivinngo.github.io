@@ -1,0 +1,39 @@
+{{ define "header" }}
+<header style="background: #fff; padding: 60px 0 20px; border-bottom: 1px solid #eee;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <h1 style="color: #000; font-size: 2.6em; font-weight: 700; line-height: 1.2; margin: 0 0 12px;">{{ .Title }}</h1>
+                {{ with .Description }}
+                <p style="color: #777; font-size: 1em; margin: 0;">{{ . }}</p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
+
+                {{ with .Content }}
+                <div style="margin-bottom: 30px;">{{ . }}</div>
+                {{ end }}
+
+                <ul style="list-style: none; padding-left: 0;">
+                {{ range .Pages.ByDate.Reverse }}
+                    <li style="margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                        <h3 style="margin: 0 0 6px;"><a href="{{ .RelPermalink }}" style="color: #222;">{{ .Title }}</a></h3>
+                        <span style="color: #999; font-size: 0.85em;">{{ .Date.Format "January 2, 2006" }}</span>
+                        {{ with .Description }}<p style="color: #555; margin: 8px 0 0;">{{ . }}</p>{{ end }}
+                    </li>
+                {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</article>
+{{ end }}
