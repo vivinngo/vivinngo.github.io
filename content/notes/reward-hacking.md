@@ -22,6 +22,6 @@ There are few ways to avoid reward hacking:
 2. Combine multiple metrics: In reward function, don't just rely on one metric. Should combine multiple proxy metrics.
 3. Use adversarial evaluation: Treat your reward function as an adaptive agent itself that actively tries to catch the AI's tricks and exploits.
 
-Read this blog from Lilian Weng if you want to dive deeper in to reward hacking: https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://lilianweng.github.io/posts/2024-11-28-reward-hacking/&ved=2ahUKEwie29bnsp6VAxXpVkEAHXA3OLQQFnoECBcQAQ&usg=AOvVaw0xeRje8gsP88aV8w1IhHXN
+Read this blog from Lilian Weng if you want to dive deeper in to reward hacking: https://lilianweng.github.io/posts/2024-11-28-reward-hacking/
 
 ---
