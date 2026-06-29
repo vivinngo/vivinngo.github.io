@@ -59,6 +59,8 @@ home = ["HTML", "RSS"]
   about_me = true
   last_posts = true
 
+  dark_mode_toggle = false
+
   custom_css = ["css/custom.css"]
 
   [params.social]
